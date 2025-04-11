@@ -22,6 +22,7 @@ public:
 	static void replace(std::string *base, const std::string find, const long long repln);
 	static void trimRight(std::string& str, const char* chars2remove);
 	static void trimLeft(std::string& str, const char* chars2remove);
+	static void setBaseLanguage();
 	void initLang(std::string input);
 	CGUIMcaLang(void);
 	~CGUIMcaLang(void);
