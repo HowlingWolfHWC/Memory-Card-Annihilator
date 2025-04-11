@@ -15,6 +15,12 @@ private:
 	static const std::map<const std::string, const std::string> m_default_lang;
 	static const int m_numof_entries;
 	static const langmapRaw m_default_lang_raw[];
+	static const langmapRaw m_eng_lang_raw[];
+	static const langmapRaw m_fre_lang_raw[];
+	static const langmapRaw m_spa_lang_raw[];
+	static const langmapRaw m_ger_lang_raw[];
+	static const langmapRaw m_ita_lang_raw[];
+	static const langmapRaw m_por_lang_raw[];
 	std::map<std::string, std::string> m_curr_lang;
 public:
 	const char *getText(const char *label);
