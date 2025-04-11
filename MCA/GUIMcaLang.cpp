@@ -130,6 +130,7 @@ void CGUIMcaLang::replace(std::string *base, const std::string find, const long 
 	}
 }
 
+void SetLanguageBase(){
 if (configGetLanguage() == 1){
 	const CGUIMcaLang::langmapRaw CGUIMcaLang::m_default_lang_raw[] = {
 		CGUIMcaLang::langmapRaw("LNG_MWND_CHOOSE_SLOT", "Select slot"),
@@ -467,5 +468,7 @@ if (configGetLanguage() == 1){
 		CGUIMcaLang::langmapRaw("LNG_OPER_QUESTION_SIZE_MISMATCH", "You've selected a size bigger than default. This could damage the memory card!\n\nDo you want to continue?"),
 	};
 }
+}
+SetLanguageBase();
 const int CGUIMcaLang::m_numof_entries = sizeof(CGUIMcaLang::m_default_lang_raw) / sizeof CGUIMcaLang::m_default_lang_raw[0];
 const std::map<const std::string, const std::string> CGUIMcaLang::m_default_lang(CGUIMcaLang::m_default_lang_raw, CGUIMcaLang::m_default_lang_raw + CGUIMcaLang::m_numof_entries);
