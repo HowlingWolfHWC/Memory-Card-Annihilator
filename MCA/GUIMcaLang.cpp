@@ -383,7 +383,7 @@ const CGUIMcaLang::langmapRaw CGUIMcaLang::m_ita_lang_raw[] = {
 	CGUIMcaLang::langmapRaw("LNG_OPER_QUESTION_FORMAT_DATA_LOST", "Sei sicuro/a di voler procedere con la formattazione?\n\nTutti i dati sulla Memory Card andranno persi!"),
 	CGUIMcaLang::langmapRaw("LNG_OPER_QUESTION_UNFORMAT_DATA_LOST", "Sei sicuro/a di voler procedere con la formattazione?\n\nTutti i dati sulla Memory Card andranno persi!"),
 	CGUIMcaLang::langmapRaw("LNG_OPER_QUESTION_RESTORE_DATA_LOST", "Sei sicuro/a di voler ripristinare l'immagine?\n\nTutti i dati sulla Memory Card andranno persi!"),
-	CGUIMcaLang::langmapRaw("LNG_OPER_QUESTION_OVERWRITE", "Il file specificato esiste già, vuoi sovrascriverlo?\n\nI dati precedenti nel file andranno sovrascritti!."),),
+	CGUIMcaLang::langmapRaw("LNG_OPER_QUESTION_OVERWRITE", "Il file specificato esiste già, vuoi sovrascriverlo?\n\nI dati precedenti nel file andranno sovrascritti!."),
 	CGUIMcaLang::langmapRaw("LNG_WARN_CAP", "Attenzione..."),
 	CGUIMcaLang::langmapRaw("LNG_WARN_NO_CARD_IN_SLOT", "La Memory card {SLOTNUM} è stata disinserita ed il programma tornerà alla schermata principale.\n\n\nPremi X per continuare"),
 	CGUIMcaLang::langmapRaw("LNG_PROGRESS_DO_NOT_REMOVE", "\nDNon rimuovere la Memory Card, resettare o spegnere la console"),
