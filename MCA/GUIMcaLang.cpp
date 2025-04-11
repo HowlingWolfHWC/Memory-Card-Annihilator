@@ -130,11 +130,8 @@ void CGUIMcaLang::replace(std::string *base, const std::string find, const long 
 	}
 }
 
-const int systemLanguage = configGetLanguage();
-void SetLang()
-{
-if (systemLanguage == 1){
-		CGUIMcaLang::langmapRaw CGUIMcaLang::m_default_lang_raw[] = {
+if (configGetLanguage() == 1){
+	const CGUIMcaLang::langmapRaw CGUIMcaLang::m_default_lang_raw[] = {
 		CGUIMcaLang::langmapRaw("LNG_MWND_CHOOSE_SLOT", "Select slot"),
 		CGUIMcaLang::langmapRaw("LNG_OPER_PS2_MEMORY_CARD", "PS2 Memory Card"),
 		CGUIMcaLang::langmapRaw("LNG_OPER_PSX_MEMORY_CARD", "PS1 Memory Card"),
@@ -181,8 +178,8 @@ if (systemLanguage == 1){
 		CGUIMcaLang::langmapRaw("LNG_EXIT_FAILED", "\n\nThe selected file couldn't be opened."),
 		CGUIMcaLang::langmapRaw("LNG_OPER_QUESTION_SIZE_MISMATCH", "You've selected a size bigger than default. This could damage the memory card!\n\nDo you want to continue?"),
 	};
-} else if (systemLanguage == 2){
-		CGUIMcaLang::langmapRaw CGUIMcaLang::m_default_lang_raw[] = {
+} else if (configGetLanguage() == 2){
+	const CGUIMcaLang::langmapRaw CGUIMcaLang::m_default_lang_raw[] = {
 		CGUIMcaLang::langmapRaw("LNG_MWND_CHOOSE_SLOT", "Choisissez un port"),
 		CGUIMcaLang::langmapRaw("LNG_OPER_PS2_MEMORY_CARD", "Carte Mémoire PS2"),
 		CGUIMcaLang::langmapRaw("LNG_OPER_PSX_MEMORY_CARD", "Carte Mémoire PS1"),
@@ -229,8 +226,8 @@ if (systemLanguage == 1){
 		CGUIMcaLang::langmapRaw("LNG_EXIT_FAILED", "\n\nLe fichier sélectionné n'a pas pu être ouvert."),
 		CGUIMcaLang::langmapRaw("LNG_OPER_QUESTION_SIZE_MISMATCH", "Vous avez sélectionné une taille supérieure à l'original. Ceci pourrait endommager la Carte Mémoire.\n\nVoulez-vous continuer?"),
 	};
-} else if (systemLanguage == 3){
-		CGUIMcaLang::langmapRaw CGUIMcaLang::m_default_lang_raw[] = {
+} else if (configGetLanguage() == 3){
+	const CGUIMcaLang::langmapRaw CGUIMcaLang::m_default_lang_raw[] = {
 		CGUIMcaLang::langmapRaw("LNG_MWND_CHOOSE_SLOT", "Seleccionar ranura"),
 		CGUIMcaLang::langmapRaw("LNG_OPER_PS2_MEMORY_CARD", "Memory Card de PS2"),
 		CGUIMcaLang::langmapRaw("LNG_OPER_PSX_MEMORY_CARD", "Memory Card de PS1"),
@@ -277,8 +274,8 @@ if (systemLanguage == 1){
 		CGUIMcaLang::langmapRaw("LNG_EXIT_FAILED", "\n\nEl archivo seleccionado no se puede abrir."),
 		CGUIMcaLang::langmapRaw("LNG_OPER_QUESTION_SIZE_MISMATCH", "El tamaño es distinto al por defecto. ¡Esto puede dañar la Memory Card!\n\n¿Seguro que desea continuar?"),
 	};
-} else if (systemLanguage == 4){
-		CGUIMcaLang::langmapRaw CGUIMcaLang::m_default_lang_raw[] = {
+} else if (configGetLanguage() == 4){
+	const CGUIMcaLang::langmapRaw CGUIMcaLang::m_default_lang_raw[] = {
 		CGUIMcaLang::langmapRaw("LNG_MWND_CHOOSE_SLOT", "Slot wählen"),
 		CGUIMcaLang::langmapRaw("LNG_OPER_PS2_MEMORY_CARD", "PS2 Memory Card"),
 		CGUIMcaLang::langmapRaw("LNG_OPER_PSX_MEMORY_CARD", "PS1 Memory Card"),
@@ -325,8 +322,8 @@ if (systemLanguage == 1){
 		CGUIMcaLang::langmapRaw("LNG_EXIT_FAILED", "\n\nDie gewählte Datei konnte nicht geöffnet werden."),
 		CGUIMcaLang::langmapRaw("LNG_OPER_QUESTION_SIZE_MISMATCH", "Die ausgewählte Größe entspricht nicht der erkannten Größe der MemoryCard.\nDies könnte die MemoryCard beschädigen!\n\nMöchten Sie den Vorgang fortsetzen?"),
 	};
-} else if (systemLanguage == 5){
-		CGUIMcaLang::langmapRaw CGUIMcaLang::m_default_lang_raw[] = {
+} else if (configGetLanguage() == 5){
+	const CGUIMcaLang::langmapRaw CGUIMcaLang::m_default_lang_raw[] = {
 		CGUIMcaLang::langmapRaw("LNG_MWND_CHOOSE_SLOT", "Seleziona slot"),
 		CGUIMcaLang::langmapRaw("LNG_OPER_PS2_MEMORY_CARD", "Memory Card PS2"),
 		CGUIMcaLang::langmapRaw("LNG_OPER_PSX_MEMORY_CARD", "Memory Card PS1"),
@@ -373,8 +370,8 @@ if (systemLanguage == 1){
 		CGUIMcaLang::langmapRaw("LNG_EXIT_FAILED", "\n\nIl file selezionato non può essere aperto."),
 		CGUIMcaLang::langmapRaw("LNG_OPER_QUESTION_SIZE_MISMATCH", "Hai selezionato una dimensione troppo grande. Questo potrebbe danneggare la Memory Card!\n\nSei sicuro di voler continuare?"),
 	};
-} else if (systemLanguage == 7){
-		CGUIMcaLang::langmapRaw CGUIMcaLang::m_default_lang_raw[] = {
+} else if (configGetLanguage() == 7){
+	const CGUIMcaLang::langmapRaw CGUIMcaLang::m_default_lang_raw[] = {
 		CGUIMcaLang::langmapRaw("LNG_MWND_CHOOSE_SLOT", "Selecionar entrada"),
 		CGUIMcaLang::langmapRaw("LNG_OPER_PS2_MEMORY_CARD", "PS2 Memory Card"),
 		CGUIMcaLang::langmapRaw("LNG_OPER_PSX_MEMORY_CARD", "PS1 Memory Card"),
@@ -422,7 +419,7 @@ if (systemLanguage == 1){
 		CGUIMcaLang::langmapRaw("LNG_OPER_QUESTION_SIZE_MISMATCH", "Voce selecionou um tamanho maior que o padrao. Isso pode danificar seu memorycard!\n\nVoce quer continuar?"),
 	};
 } else {
-		CGUIMcaLang::langmapRaw CGUIMcaLang::m_default_lang_raw[] = {
+	const CGUIMcaLang::langmapRaw CGUIMcaLang::m_default_lang_raw[] = {
 		CGUIMcaLang::langmapRaw("LNG_MWND_CHOOSE_SLOT", "Select slot"),
 		CGUIMcaLang::langmapRaw("LNG_OPER_PS2_MEMORY_CARD", "PS2 Memory Card"),
 		CGUIMcaLang::langmapRaw("LNG_OPER_PSX_MEMORY_CARD", "PS1 Memory Card"),
@@ -470,8 +467,5 @@ if (systemLanguage == 1){
 		CGUIMcaLang::langmapRaw("LNG_OPER_QUESTION_SIZE_MISMATCH", "You've selected a size bigger than default. This could damage the memory card!\n\nDo you want to continue?"),
 	};
 }
-}
-
 const int CGUIMcaLang::m_numof_entries = sizeof(CGUIMcaLang::m_default_lang_raw) / sizeof CGUIMcaLang::m_default_lang_raw[0];
 const std::map<const std::string, const std::string> CGUIMcaLang::m_default_lang(CGUIMcaLang::m_default_lang_raw, CGUIMcaLang::m_default_lang_raw + CGUIMcaLang::m_numof_entries);
-SetLang()
