@@ -131,6 +131,7 @@ void CGUIMcaLang::replace(std::string *base, const std::string find, const long 
 }
 
 int systemLanguage = configGetLanguage();
+
 if (systemLanguage == 1){
       const CGUIMcaLang::langmapRaw CGUIMcaLang::m_default_lang_raw[] = {
          CGUIMcaLang::langmapRaw("LNG_MWND_CHOOSE_SLOT", "Select slot"),
